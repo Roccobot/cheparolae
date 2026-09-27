@@ -213,13 +213,13 @@ Un file più specifico vince **dove parla**, e il suo silenzio non è una deroga
 - **Le regole trasversali vivono nell'hub** `Roccobot/roccobot.github.io` (`AGENTS.md` e
   `Rules.md`), e valgono anche qui.
 - **Ramo principale `main`**, l'unico (`Rules.md` § '🌿 Ramo e versione').
-- **La pagina non porta un numero di versione** e il repo non ha una fonte di versione: SlimVer
-  qui non è ancora applicato, e quindi non esiste una sonda per verificare una pubblicazione
-  (`Rules.md` § '🌿 Ramo e versione').
-- **La favicon principale è un SVG scritto dentro `index.html`**; le icone PNG, `manifest.json` e
-  `browserconfig.xml` sono il corredo di contorno (`Rules.md` § '🗂️ I file del repo').
-- **Non collegati da nessuna pagina**: `Parole_BCK.html`, `Labadessa.ttf`, e le due immagini
-  `angolo_*.png`, citate solo in un blocco commentato (`Rules.md` § '🗂️ I file del repo').
+- **La pagina resta senza numero di versione, per scelta dell'utente**: è una deroga dichiarata
+  a SlimVer, e una pubblicazione si verifica con un `curl` su `index.html` con
+  `Cache-Control: no-cache` (`Rules.md` § '🌿 Ramo e versione').
+- **Favicon e icone sono la 🤌🏻 di Google Noto Emoji**: la favicon SVG vive dentro `index.html`,
+  le PNG e l'ICO sono lo stesso disegno ridotto, senza palette (`Rules.md` § '🗂️ I file del repo').
+- **`manifest.json` e `browserconfig.xml` usano percorsi relativi**: il sito vive sotto
+  `/cheparolae/`, e un percorso che comincia con `/` punta alla radice del dominio.
 - **Stato W3C**: 0 errori e 0 warning dal 2026-07-14 (`Rules.md` § '🧭 Che cos'è').
 - Il repo **non registra regole proprie non derogabili, trappole né casi pesanti**: valgono quelli
   del nucleo universale e dell'hub.
