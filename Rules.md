@@ -26,19 +26,31 @@
 ## 🌿 Ramo e versione
 
 - **Ramo principale `main`**, l'unico, in locale e sul remoto.
-- **La pagina non porta un numero di versione**, e nel repo non c'è un file che ne faccia da
-  fonte: la regola universale (SlimVer, con una fonte sola visibile nel prodotto) qui non è ancora
-  applicata. Di conseguenza non esiste nemmeno una sonda con cui verificare una pubblicazione.
+- ⚠️ **La pagina resta senza numero di versione, per scelta dell'utente** (2026-09-27: *resta
+  senza, è una paginetta statica che potrei anche aggiornare a mano e non la tocco praticamente
+  mai*). È una deroga dichiarata alla regola universale (SlimVer, con una fonte sola visibile nel
+  prodotto), e vale solo qui. Di conseguenza non c'è una sonda di versione: una pubblicazione si
+  verifica con un `curl` su `index.html` (con `Cache-Control: no-cache`) cercando la modifica
+  appena fatta.
 
 ## 🗂️ I file del repo
 
-- **In uso da `index.html`**: `titolo.gif`, il font `BrainFlower.ttf` (dichiarato con
-  `@font-face` e usato dall'elenco), le icone `apple-icon-*`, `android-icon-192x192.png`,
-  `favicon-*.png`, `manifest.json` e i metadati `msapplication-*`. La favicon principale è un SVG
-  scritto dentro `index.html`, sostituito il 2026-05-24 con la mano dell'emoji Noto a tono di pelle
-  chiaro.
-- **Non collegati da nessuna pagina**: `Parole_BCK.html` (una versione più corta della pagina,
-  caricata insieme a lei nel primo commit) e `Labadessa.ttf`. `angolo_sinistro.png` e
-  `angolo_destro.png` compaiono solo in un blocco commentato.
-- **`ArialNarrow.ttf`** è dichiarato col nome `ArialNarrow`, mentre la riga del copyright chiede
-  `'Arial Narrow'`: il nome non coincide, quindi quella riga non usa il file del repo.
+- **In uso da `index.html`**: `titolo.gif`, i font `BrainFlower.ttf` (l'elenco) e
+  `ArialNarrow.ttf` (la riga del copyright), le icone `apple-icon-*`, `android-icon-*`,
+  `ms-icon-*`, `favicon-*.png` e `favicon.ico`, `manifest.json` e `browserconfig.xml`.
+- **Favicon e icone sono la 🤌🏻 (U+1F90C U+1F3FB) di Google Noto Emoji**, per scelta
+  dell'utente (2026-09-27). La favicon principale è l'SVG di Noto scritto dentro `index.html`; le
+  icone PNG e l'ICO sono lo stesso disegno reso a 1024 pixel e ridotto, in RGBA senza palette, con
+  lo sfondo bianco nelle sole `apple-icon-*`, perché iOS riempie di nero la trasparenza. Fino a
+  quel giorno la favicon era la 🤏🏻 (U+1F90F), diversa da quella voluta, e le icone PNG mostravano la
+  freccia 'TOP' di Arda Top, copiate da là. ⚠️ **L'SVG viene dal set `noto` di Iconify**
+  (`@iconify-json/noto`, su jsDelivr), cioè le emoji Noto di Google convertite: il repo
+  `googlefonts/noto-emoji` non si raggiunge da jsDelivr, e i raw di quei file rispondono 404.
+- **`manifest.json` e `browserconfig.xml` usano percorsi relativi dal 2026-09-27**: prima
+  cominciavano con `/`, cioè puntavano alla radice del dominio, dove quelle icone non ci sono. Il
+  manifest si chiama come la pagina, `Ma che parola è`, e non più `App`.
+- **Tolti il 2026-09-27, su istruzione dell'utente, perché nessuna pagina li usava**:
+  `Parole_BCK.html`, `Labadessa.ttf`, `angolo_sinistro.png` e `angolo_destro.png`, con il
+  blocco commentato e le regole CSS degli angoli.
+- **`ArialNarrow.ttf` è dichiarato col nome `'Arial Narrow'` dal 2026-09-27**, quello che la
+  riga del copyright chiede: prima il nome era `ArialNarrow`, e quella riga non usava il file.
