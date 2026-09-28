@@ -233,5 +233,8 @@ Un file più specifico vince **dove parla**, e il suo silenzio non è una deroga
 - **`manifest.json` e `browserconfig.xml` usano percorsi relativi**: il sito vive sotto
   `/cheparolae/`, e un percorso che comincia con `/` punta alla radice del dominio.
 - **Stato W3C**: 0 errori e 0 warning dal 2026-07-14 (`Rules.md` § '🧭 Che cos'è').
+- **Il tema segue il sistema a ogni caricamento, e il tasto nascosto `T` lo inverte senza salvare
+  niente**; la testata si inverte col CSS, e il file non si tocca (`Rules.md` § '🌗 Il tema
+  scuro, e il tasto nascosto `T`').
 - Il repo **non registra regole proprie non derogabili, trappole né casi pesanti**: valgono quelli
   del nucleo universale e dell'hub.
