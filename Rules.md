@@ -22,6 +22,11 @@
   il repo (`7e1a870`) la dice servita da GitHub Pages, e aggiunge `.nojekyll` come nel sito di base.
 - **W3C**: il 2026-07-14, ancora nell'hub, `index.html` e `Parole_BCK.html` sono stati portati a
   0 errori e 0 warning (commit `b4cabb3` e `9c308c5`).
+  - ⚠️ **La favicon SVG del 2026-09-27 aveva riportato un errore**: il suo indirizzo `data:`
+    conteneva gli spazi del disegno non codificati. Dal 2026-09-28 sono scritti `%20`, la favicon
+    resa è identica pixel per pixel, e la pagina è di nuovo a 0 errori e 0 warning. **Si controlla
+    col validatore locale** (`vnu.jar`, dal pacchetto npm `vnu-jar`): quello online risponde 403
+    alle richieste di queste sessioni.
 
 ## 🌿 Ramo e versione
 
@@ -54,3 +59,18 @@
   blocco commentato e le regole CSS degli angoli.
 - **`ArialNarrow.ttf` è dichiarato col nome `'Arial Narrow'` dal 2026-09-27**, quello che la
   riga del copyright chiede: prima il nome era `ArialNarrow`, e quella riga non usava il file.
+
+## 🌗 Il tema scuro, e il tasto nascosto `T`
+
+- **La pagina segue il tema del sistema a ogni caricamento** (richiesta dell'utente, 2026-09-28:
+  *niente pulsanti, niente memorizzazione della modalità*). I colori sono variabili CSS su
+  `:root`, ridefinite dentro `@media (prefers-color-scheme: dark)`.
+- ⚠️ **Il tasto `T` inverte il tema, ed è una funzione nascosta**: nessun pulsante lo annuncia.
+  Mette `data-theme` su `<html>` e aggiorna i due `theme-color`, e **non salva niente**: niente
+  `localStorage`, niente cookie. Al ricaricamento vale di nuovo il tema del sistema, per sua
+  scelta. Con Ctrl, Cmd o Alt premuti, o col tasto tenuto giù, non fa niente.
+- ⚠️ **La testata `titolo.gif` è nera su un fondo bianco opaco, e il file non si tocca**: nel tema
+  scuro la inverte il CSS (`filter: invert(1)`), e `mix-blend-mode: lighten` lascia vedere il
+  fondo della pagina al posto del riquadro nero che l'inversione produrrebbe.
+- **La riga del copyright ha la classe `copyright`**: il colore tenue di prima era scritto nello
+  stile in linea, e nel tema scuro sarebbe diventato una riga quasi bianca.
