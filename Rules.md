@@ -6,7 +6,7 @@
 > perché `CLAUDE.md` lo importa; gli altri agenti lo leggono quando il lavoro tocca una sua
 > sezione. Le regole trasversali vivono nelle regole dell'hub `Roccobot/roccobot.github.io`
 > (`AGENTS.md` e `Rules.md`), quelle universali in `rules/Roccobot.md` di `Roccobot/tools`.
-> ⚠️ **Il repo non aveva un `CLAUDE.md`**: questo file nasce il 2026-09-27 e porta solo i fatti
+> ⚠️ **Il repo non aveva un `CLAUDE.md`**: questo file nasce il 2026-09-27 e contiene solo i fatti
 > verificati nel repo quel giorno. Quello che il repo non dice non è scritto qui.
 
 ## 🧭 Che cos'è
