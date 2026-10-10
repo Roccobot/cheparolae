@@ -2,9 +2,9 @@
 
 > **Cos'è questo file.** Il testo completo delle regole del progetto **'Ma che parola è'**, la
 > pagina che elenca parole in colonna. Vale per **tutti gli agenti**: il nucleo, cioè ogni regola
-> in una riga, vive in `AGENTS.md`, e questo file ne dà il perché. Claude Code lo carica da sé,
-> perché `CLAUDE.md` lo importa; gli altri agenti lo leggono quando il lavoro tocca una sua
-> sezione. Le regole trasversali vivono nelle regole dell'hub `Roccobot/roccobot.github.io`
+> in una riga, vive in `AGENTS.md`, e questo file ne dà il perché. Dal 2026-10-10 nessun
+> agente lo carica da sé, Claude Code compreso: si legge per intero prima di lavorare su una
+> cosa di cui parla. Le regole trasversali vivono nelle regole dell'hub `Roccobot/roccobot.github.io`
 > (`AGENTS.md` e `Rules.md`), quelle universali in `rules/Roccobot.md` di `Roccobot/tools`.
 > ⚠️ **Il repo non aveva un `CLAUDE.md`**: questo file nasce il 2026-09-27 e contiene solo i fatti
 > verificati nel repo quel giorno. Quello che il repo non dice non è scritto qui.
