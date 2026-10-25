@@ -8,6 +8,26 @@
 > `rules/Roccobot.md` di `Roccobot/tools`, § '🗄️ Le cose tolte vivono in Removed.md').
 > Le voci vanno dalla più recente alla più vecchia.
 
+## 🤏 La favicon 🤏🏻 e le icone con la freccia TOP
+
+- **Che cosa erano**: la favicon e le icone della pagina prima della 🤌🏻 di oggi.
+  - La favicon era un SVG scritto dentro `index.html` come indirizzo `data:`, la 🤏🏻 (U+1F90F
+    con la carnagione chiara, `emoji_u1f90f_1f3fb` di Google Noto Emoji), diversa da quella
+    voluta: i commit che l'hanno messa, il 2026-05-24, la chiamavano 🤌🏻.
+  - Le icone PNG e l'ICO (`apple-icon-*`, `android-icon-*`, `ms-icon-*`, `favicon-*.png`,
+    `favicon.ico`) mostravano la freccia 'TOP' di Arda Top, copiate da là e caricate il
+    2025-11-28, quando la pagina viveva ancora nella cartella `Parole/` dell'hub.
+- **Sostituite il 2026-09-27**, su scelta dell'utente, dalla 🤌🏻 (U+1F90C U+1F3FB) di Google
+  Noto Emoji, nella favicon SVG e in tutte le icone: la regola sulle icone di oggi resta in
+  `Rules.md` § '🗂️ I file del repo'.
+- **Si recuperano dal commit `36ccdc4^`**, cioè il genitore del commit di `main` che le ha
+  sostituite (il repo non ha tag). Dove vivevano:
+  - la favicon, nel `<link rel="icon">` in testa a `index.html`;
+  - le icone, coi loro nomi di oggi alla radice del repo, richiamate dai `<link>` di
+    `index.html`, da `manifest.json` e da `browserconfig.xml`.
+- I comandi che le mostrano: `git show 36ccdc4^:index.html` per la favicon,
+  `git show 36ccdc4^:apple-icon-180x180.png > apple-icon-180x180.png` per un'icona.
+
 ## 🗑️ I file che nessuna pagina usava
 
 - **Che cosa facevano**: niente, ed è la ragione per cui sono usciti.
