@@ -55,8 +55,8 @@
   cominciavano con `/`, cioè puntavano alla radice del dominio, dove quelle icone non ci sono. Il
   manifest si chiama come la pagina, `Ma che parola è`, e non più `App`.
 - **Tolti il 2026-09-27, su istruzione dell'utente, perché nessuna pagina li usava**:
-  `Parole_BCK.html`, `Labadessa.ttf`, `angolo_sinistro.png` e `angolo_destro.png`, con il
-  blocco commentato e le regole CSS degli angoli.
+  `Parole_BCK.html`, `Labadessa.ttf` e le due immagini degli angoli (dettagli in
+  `docs/Removed.md` § '🗑️ I file che nessuna pagina usava').
 - **`ArialNarrow.ttf` è dichiarato col nome `'Arial Narrow'` dal 2026-09-27**, quello che la
   riga del copyright chiede: prima il nome era `ArialNarrow`, e quella riga non usava il file.
 
