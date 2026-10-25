@@ -46,9 +46,9 @@
 - **Favicon e icone sono la 🤌🏻 (U+1F90C U+1F3FB) di Google Noto Emoji**, per scelta
   dell'utente (2026-09-27). La favicon principale è l'SVG di Noto scritto dentro `index.html`; le
   icone PNG e l'ICO sono lo stesso disegno reso a 1024 pixel e ridotto, in RGBA senza palette, con
-  lo sfondo bianco nelle sole `apple-icon-*`, perché iOS riempie di nero la trasparenza. Fino a
-  quel giorno la favicon era la 🤏🏻 (U+1F90F), diversa da quella voluta, e le icone PNG mostravano la
-  freccia 'TOP' di Arda Top, copiate da là. ⚠️ **L'SVG viene dal set `noto` di Iconify**
+  lo sfondo bianco nelle sole `apple-icon-*`, perché iOS riempie di nero la trasparenza. Hanno
+  sostituito una favicon e delle icone diverse da quelle volute (dettagli in `docs/Removed.md`
+  § '🤏 La favicon 🤏🏻 e le icone con la freccia TOP'). ⚠️ **L'SVG viene dal set `noto` di Iconify**
   (`@iconify-json/noto`, su jsDelivr), cioè le emoji Noto di Google convertite: il repo
   `googlefonts/noto-emoji` non si raggiunge da jsDelivr, e i raw di quei file rispondono 404.
 - **`manifest.json` e `browserconfig.xml` usano percorsi relativi dal 2026-09-27**: prima
